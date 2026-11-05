@@ -1,0 +1,173 @@
+/* =========================================================
+   HIGH-CONTRAST THEME (Black, White, Vibrant Orange)
+   ========================================================= */
+
+/* LIGHT MODE (Default) */
+:root {
+  --brand-primary: #f99d00;      /* Vibrant Orange */
+  --brand-hover: #e08d00;        /* Slightly darker orange */
+  --bg-body: #f8f9fa;            /* Soft off-white background */
+  --text-main: #000000;          /* True Black text */
+  --text-muted: #6c757d;         /* Standard grey text */
+  --card-bg: #ffffff;            /* White cards */
+  --border-color: #dee2e6;       
+  --footer-bg: #000000;          /* Black footer */
+  --footer-text: #ffffff;
+  --sidebar-bg: #000000;
+  --sidebar-text: #a0a0a0;
+  --sidebar-hover: #1a1a1a;
+}
+
+/* DARK MODE OVERRIDES */
+[data-bs-theme="dark"] {
+  --brand-primary: #f99d00;      /* Keep the orange pop */
+  --brand-hover: #ffb133;        /* Brighter orange for hover */
+  --bg-body: #000000;            /* True Black background */
+  --text-main: #ffffff;          /* White text */
+  --text-muted: #888888;
+  --card-bg: #121212;            /* Very dark grey for cards to separate from bg */
+  --border-color: #2a2a2a;       /* Dark grey borders */
+  --footer-bg: #000000;
+  --footer-text: #ffffff;
+  --sidebar-bg: #000000;
+  --sidebar-text: #a0a0a0;
+  --sidebar-hover: #1a1a1a;
+}
+
+/* --- GLOBAL STYLES --- */
+body { 
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    background-color: var(--bg-body);
+    color: var(--text-main);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* --- BUTTONS & ACCENTS --- */
+.btn-primary {
+    background-color: var(--brand-primary) !important;
+    border-color: var(--brand-primary) !important;
+    color: #000000 !important; /* Black text on orange for that high contrast */
+    font-weight: 700;
+}
+.btn-primary:hover, .btn-primary:focus {
+    background-color: var(--brand-hover) !important;
+    border-color: var(--brand-hover) !important;
+    color: #000000 !important;
+}
+.btn-outline-primary {
+    color: var(--brand-primary) !important;
+    border-color: var(--brand-primary) !important;
+}
+.btn-outline-primary:hover {
+    background-color: var(--brand-primary) !important;
+    color: #000000 !important;
+}
+.text-primary {
+    color: var(--brand-primary) !important;
+}
+.bg-primary {
+    background-color: var(--brand-primary) !important;
+    color: #000000 !important;
+}
+
+/* --- HERO SECTION --- */
+.hero { 
+    background: linear-gradient(135deg, var(--bg-body), var(--card-bg)); 
+    padding: 4rem 0;
+    border: 1px solid var(--border-color);
+}
+[data-bs-theme="dark"] .hero {
+    background: linear-gradient(135deg, #000000, #121212);
+}
+
+/* --- CARDS --- */
+.card { 
+    transition: transform .2s, box-shadow .2s;
+    background-color: var(--card-bg);
+    border-color: var(--border-color);
+    color: var(--text-main);
+}
+.card:hover { 
+    transform: translateY(-4px); 
+    box-shadow: 0 .5rem 1rem rgba(249, 157, 0, 0.15); /* Orange glow on hover */
+    border-color: var(--brand-primary);
+}
+.card-header {
+    background-color: var(--card-bg);
+    border-bottom-color: var(--border-color);
+    color: var(--text-main);
+}
+
+/* --- SKILL BARS --- */
+.skill-bar { 
+    height: 8px; 
+    background: var(--border-color); 
+    border-radius: 4px; 
+    overflow: hidden; 
+}
+.skill-bar > div { 
+    height: 100%; 
+    background: var(--brand-primary); 
+}
+
+/* --- DASHBOARD SIDEBAR --- */
+.dashboard-sidebar {
+    background-color: var(--sidebar-bg) !important;
+    border-right: 1px solid var(--border-color);
+}
+.dashboard-sidebar .nav-link { 
+    color: var(--sidebar-text); 
+    border-radius: 6px;
+    margin-bottom: 2px;
+}
+.dashboard-sidebar .nav-link:hover {
+    color: #ffffff;
+    background-color: var(--sidebar-hover);
+}
+.dashboard-sidebar .nav-link.active { 
+    background: var(--brand-primary); 
+    color: #000000 !important; 
+    font-weight: 700;
+}
+
+/* --- NAVBAR & FOOTER --- */
+.navbar {
+    background-color: var(--footer-bg) !important;
+    border-bottom: 1px solid var(--border-color);
+}
+.footer, footer {
+    background-color: var(--footer-bg) !important;
+    color: var(--footer-text) !important;
+    border-top: 1px solid #2a2a2a;
+}
+
+/* --- LINKS --- */
+a { color: var(--brand-primary); text-decoration: none; }
+a:hover { color: var(--brand-hover); }
+
+/* --- FORMS --- */
+.form-control, .form-select {
+    background-color: var(--bg-body);
+    color: var(--text-main);
+    border-color: var(--border-color);
+}
+.form-control:focus, .form-select:focus {
+    background-color: var(--bg-body);
+    color: var(--text-main);
+    border-color: var(--brand-primary);
+    box-shadow: 0 0 0 0.25rem rgba(249, 157, 0, 0.25);
+}
+[data-bs-theme="dark"] .form-control, 
+[data-bs-theme="dark"] .form-select {
+    background-color: #121212; 
+}
+
+/* --- UTILITIES --- */
+.bg-body-tertiary {
+    background-color: var(--card-bg) !important;
+    border: 1px solid var(--border-color);
+}
+.project-thumb { 
+    aspect-ratio: 16/9; 
+    object-fit: cover; 
+}
