@@ -33,8 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const phrases = [
       "Web Development",
       "Graphic Design",
-      "UI/UX Design",
-      "Software Engineering"
+      "UI/UX Design"
     ];
 
     let phraseIndex = 0;
