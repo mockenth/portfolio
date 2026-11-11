@@ -1191,6 +1191,10 @@ body.modal-open {
   }
 }
 
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
 /* Add this to animations.css if you don't already have it */
 .reveal {
   opacity: 0;
