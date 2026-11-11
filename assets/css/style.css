@@ -1214,6 +1214,7 @@ body.modal-open {
 }*/
 
 #typedRole {
+  color: var(--accent);
   display: inline-block;
   min-height: 1.2em; /* Prevents jumping when text is empty */
 }

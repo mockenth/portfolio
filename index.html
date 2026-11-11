@@ -185,6 +185,23 @@
       <div class="certificate-grid" id="certificateGrid"></div>
     </section>
 
+      <!-- CERTIFICATE MODAL -->
+  <div class="modal" id="certificateModal" role="dialog" aria-modal="true" aria-label="Certificate Preview" hidden>
+    <button class="modal-close" id="certModalClose" aria-label="Close preview">×</button>
+    <button class="modal-arrow prev" id="certModalPrev" aria-label="Previous item">‹</button>
+
+    <div class="modal-content">
+      <img id="certModalImage" alt="">
+      <div class="modal-caption">
+        <h3 id="certModalTitle"></h3>
+        <p id="certModalDesc"></p>
+        <a href="#" id="certModalLink" target="_blank" class="project-view-link" rel="noopener" style="display: none; margin-top: 15px;">VIEW CERTIFICATE ↗</a>
+      </div>
+    </div>
+
+    <button class="modal-arrow next" id="certModalNext" aria-label="Next item">›</button>
+  </div>
+
     <section class="section section-alt" id="journey">
       <div class="container">
         <div class="section-heading reveal">

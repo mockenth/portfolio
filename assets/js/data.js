@@ -9,7 +9,6 @@ window.PORTFOLIO_DATA = {
 
   /* projects in progress and designs of the owner */
   projects: [
-
     {
       title: "Road Damage Detection System",
       category: "ai",
@@ -31,85 +30,61 @@ window.PORTFOLIO_DATA = {
       title: "Kimud Shoal",
       category: "web",
       type: "Web Development",
-      description: ["A Tourism Webapp that allows visitors to book a dive trip to Kimud Shoal,",
-                     "a popular diving destination.",
-                     " The app provides information about the site, available packages, and a booking system. "],
-      tech: ["php", "MySQL", "HTML", "CSS", "Javascript"],
+      subtitle: "Dive trip booking platform.",
+      description: "A Tourism Webapp that allows visitors to book a dive trip to Kimud Shoal, a popular diving destination. The app provides information about the site, available packages, and a booking system.",
+      features: [
+        "Browse available dive packages and schedules.",
+        "Secure booking system for visitors.",
+        "Information portal for the Kimud Shoal diving site."
+      ],
+      tech: ["PHP", "MySQL", "HTML", "CSS", "Javascript"],
       date: "[YEAR]",
       image: "",
       link: "",
       github: ""
     },
-
-    /*{
-      title: "Personal Portfolio Website",
-      category: "web",
-      type: "Web Development",
-      description: "A responsive portfolio concept combining technology and graphic design.",
-      tech: ["HTML", "CSS", "JavaScript"],
-      date: "[YEAR]",
-      image: "",
-      link: "",
-      github: ""
-    },*/
     {
       title: "Grandma's Kitchen Recipes",
       category: "academic",
       type: "Web Development",
-      description: "A recipe-sharing site for traditional Filipino dishes that usually get passed down by word of mouth. Users can browse by category, search recipes, and view ingredients and step-by-step instructions, with a simple login system for future recipe saving. ",
-      tech: ["php", "MySQL", "HTML", "CSS", "Javascript"],
+      subtitle: "Authentic Filipino recipe sharing.",
+      description: "A recipe-sharing site for traditional Filipino dishes that usually get passed down by word of mouth. Users can browse by category, search recipes, and view ingredients and step-by-step instructions, with a simple login system for future recipe saving.",
+      features: [
+        "Search and filter recipes by category.",
+        "View detailed ingredients and step-by-step instructions.",
+        "User login system for saving favorite recipes."
+      ],
+      tech: ["PHP", "MySQL", "HTML", "CSS", "Javascript"],
       date: "[YEAR]",
       image: "/assets/images/project-in-progress/gkr.png",
       link: "https://grandmaskitchen.freedev.app/",
       github: ""
-    },
-
+    }
   ],
 
-  /* publisged projects and designs of the owner */
+  /* published projects and designs of the owner */
   designs: [
     {
       title: "Basketball Jersey Concept",
       category: "jersey",
       caption: "APPAREL / SPORTSWEAR",
-      description: "Replace this sample with your own jersey artwork.",
+      description: "Custom basketball jersey design concept.",
       image: "assets/images/graphic-designs/basketball-jersey-15.jpg"
     },
     {
       title: "Basketball Jersey Concept",
       category: "jersey",
       caption: "APPAREL / SPORTSWEAR",
-      description: "Replace this sample with your own jersey artwork.",
+      description: "Custom basketball jersey design concept.",
       image: "assets/images/graphic-designs/jt-warriors.png"
     },
     {
       title: "Custom Shirt Layout",
       category: "shirt",
       caption: "APPAREL / MERCH",
-      description: "Replace this sample with your own shirt design.",
+      description: "Custom shirt layout and design.",
       image: "assets/images/graphic-designs/pe-shirt.png"
-    },
-    /*{
-      title: "Tri-fold Brochure",
-      category: "brochure",
-      caption: "PRINT / EDITORIAL",
-      description: "Replace this sample with your own brochure.",
-      image: "assets/images/graphic-designs/brochure.jpg"
-    }, */
-    // {
-    //   title: "Brand Identity",
-    //   category: "branding",
-    //   caption: "IDENTITY / LOGO",
-    //   description: "Replace this sample with your own branding work.",
-    //   image: "assets/images/graphic-designs/branding-placeholder.svg"
-    // },
-    /*{
-      title: "Creative Poster",
-      category: "other",
-      caption: "DIGITAL / POSTER",
-      description: "Replace this sample with your own poster or artwork.",
-      image: "assets/images/graphic-designs/poster-placeholder.svg"
-    } */
+    }
   ],
 
   /* certifications */
@@ -118,48 +93,47 @@ window.PORTFOLIO_DATA = {
       title: "Introduction to AI Literacy and Responsible Use",
       issuer: "Mapua University",
       date: "September 14, 2026",
-      category: "",
+      category: "AI Literacy",
       image: "assets/images/certificates/ai-literacy.png",
       file: "",
-      description: "Replace this sample entry with a genuine certificate."
+      description: "Completed the micro-credentials course on AI Literacy."
     },
     {
       title: "Networking Academy",
-      issuer: "Cisci Networking Academy",
+      issuer: "Cisco Networking Academy",
       date: "May 18, 2026",
-      category: "",
+      category: "Networking",
       image: "assets/images/certificates/cisco-networking-academy.png",
       file: "",
-      description: "Replace this sample entry with a genuine achievement."
+      description: "Student level credential for completing the Networking Basics course."
     },
     {
-      title: "Networking Bascs",
+      title: "Networking Basics",
       issuer: "Networking Academy",
       date: "May 18, 2026",
-      category: " ",
+      category: "Networking",
       image: "assets/images/certificates/networking-basics.png",
       file: "",
-      description: "Replace this sample entry with a genuine achievement."
+      description: "Successfully completed the Networking Basics course."
     },
     {
       title: "Thesis preparation with the use of Trending Tools and Industry Practices",
       issuer: "Biliran Province State University | School of Technology and Computer Studies",
       date: "October 6-7, 2025",
-      category: " ",
+      category: "Academic",
       image: "assets/images/certificates/thesis-preparation.png",
       file: "",
-      description: "Replace this sample entry with a genuine achievement."
+      description: "Participated in thesis preparation seminar."
     },
     {
       title: "DICT ICT Proficiency Diagnostic Examination",
       issuer: "DICT",
-      date: "Noveember 26, 2025",
-      category: " ",
+      date: "November 26, 2025",
+      category: "Proficiency",
       image: "assets/images/certificates/dict.jpg",
-      file: "",
-      description: "Replace this sample entry with a genuine achievement."
-    },
-
+      file: "https://web.facebook.com/photo/?fbid=836921002315926&set=a.156000637074636",
+      description: "Passed the ICT Proficiency Diagnostic Examination."
+    }
   ],
 
   journey: [
@@ -190,7 +164,7 @@ window.PORTFOLIO_DATA = {
     { name: "Facebook",  label: "Facebook",  url: "https://www.facebook.com/ea.rl.1481" },
     { name: "Instagram", label: "Instagram", url: "https://www.instagram.com/earllybirdddd?mdxt=MXZjeHN4MXJhaWZxYQ==" },
     { name: "GitHub",    label: "GitHub",    url: "https://github.com/mockenth" },
-    { name: "LinkIn",    label: "LinkIn",    url: "https://www.linkedin.com/in/earl-mocorro-8a8b4b2b/" },
+    { name: "LinkedIn",  label: "LinkedIn",  url: "https://www.linkedin.com/in/earl-mocorro-8a8b4b2b/" },
     { name: "Behance",   label: "Behance",   url: "https://www.behance.net/earlmocorro" }
   ]
 };
