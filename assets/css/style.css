@@ -1215,3 +1215,26 @@ body.modal-open {
   0%, 100% { opacity: 1; }
   50% { opacity: 0; }
 }
+
+/* Add this to animations.css if you don't already have it */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Blinking cursor for the typewriter effect */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+#typedRole {
+  display: inline-block;
+  min-height: 1.2em; /* Prevents jumping when text is empty */
+}

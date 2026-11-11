@@ -15,52 +15,92 @@
   }
 })(); */
 
-// ==========================================
-// Typewriter Effect
-// ==========================================
+/**
+ * Portfolio Animations
+ * 1. Typewriter Effect (Letter by Letter)
+ * 2. Scroll Reveal Animations
+ */
+
 document.addEventListener("DOMContentLoaded", () => {
+
+  /* ==========================================
+     1. TYPEWRITER EFFECT (Letter by Letter)
+     ========================================== */
   const typedRoleElement = document.getElementById("typedRole");
 
-  // Add or remove words you want to cycle through here
-  const words = ["Web Development", "Graphic Design", "UI/UX Design", "Software Engineering"];
-
-  let wordIndex = 0;
-  let charIndex = 0;
-  let isDeleting = false;
-  let typeSpeed = 100;
-
-  function type() {
-    const currentWord = words[wordIndex];
-
-    if (isDeleting) {
-      // Remove a character
-      typedRoleElement.textContent = currentWord.substring(0, charIndex - 1);
-      charIndex--;
-      typeSpeed = 50; // Deleting speed
-    } else {
-      // Add a character
-      typedRoleElement.textContent = currentWord.substring(0, charIndex + 1);
-      charIndex++;
-      typeSpeed = 100; // Typing speed
-    }
-
-    // Handle word completion
-    if (!isDeleting && charIndex === currentWord.length) {
-      typeSpeed = 2000; // Pause at the end of the word
-      isDeleting = true;
-    }
-    // Handle word deletion completion
-    else if (isDeleting && charIndex === 0) {
-      isDeleting = false;
-      wordIndex = (wordIndex + 1) % words.length; // Move to next word
-      typeSpeed = 500; // Pause before typing next word
-    }
-
-    setTimeout(type, typeSpeed);
-  }
-
-  // Start the typewriter effect after a short delay
   if (typedRoleElement) {
-    setTimeout(type, 1000);
+    // Add or change the phrases you want it to cycle through here
+    const phrases = [
+      "Web Development",
+      "Graphic Design",
+      "UI/UX Design",
+      "Software Engineering"
+    ];
+
+    let phraseIndex = 0;
+    let letterIndex = 0;
+    let isDeleting = false;
+    let typeSpeed = 100; // Speed of typing (ms per letter)
+
+    function typeLetterByLetter() {
+      const currentPhrase = phrases[phraseIndex];
+
+      if (isDeleting) {
+        // Remove one letter at a time
+        typedRoleElement.textContent = currentPhrase.substring(0, letterIndex - 1);
+        letterIndex--;
+        typeSpeed = 50; // Delete faster than typing
+      } else {
+        // Add one letter at a time
+        typedRoleElement.textContent = currentPhrase.substring(0, letterIndex + 1);
+        letterIndex++;
+        typeSpeed = 100; // Normal typing speed
+      }
+
+      // If the word is fully typed out
+      if (!isDeleting && letterIndex === currentPhrase.length) {
+        typeSpeed = 2000; // Pause at the end of the word
+        isDeleting = true;
+      }
+      // If the word is fully deleted
+      else if (isDeleting && letterIndex === 0) {
+        isDeleting = false;
+        phraseIndex = (phraseIndex + 1) % phrases.length; // Move to next word
+        typeSpeed = 500; // Pause before typing the next word
+      }
+
+      // Call the function again based on the current speed
+      setTimeout(typeLetterByLetter, typeSpeed);
+    }
+
+    // Start the effect after a short delay
+    setTimeout(typeLetterByLetter, 1000);
   }
+
+
+  /* ==========================================
+     2. SCROLL REVEAL ANIMATIONS
+     ========================================== */
+  const revealElements = document.querySelectorAll(".reveal");
+
+  if (revealElements.length > 0) {
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("active");
+          // Stop observing once the element is revealed
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      root: null,
+      threshold: 0.15, // Triggers when 15% of the element is visible
+      rootMargin: "0px 0px -50px 0px"
+    });
+
+    revealElements.forEach(element => {
+      revealObserver.observe(element);
+    });
+  }
+
 });
