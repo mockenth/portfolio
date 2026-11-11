@@ -1210,6 +1210,8 @@ body.modal-open {
     padding: 20px;
   }
 }
-@keyframes fadeIn {
-  to { opacity: 1; }
+/* Ensure the cursor blinks */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
 }
