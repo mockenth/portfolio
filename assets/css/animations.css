@@ -1,0 +1,75 @@
+@keyframes blink {
+  50% {
+    opacity: 0
+  }
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0)
+  }
+
+  50% {
+    transform: translateY(-12px)
+  }
+}
+
+.orbit-two {
+  animation: float 9s ease-in-out infinite
+}
+
+.floating-card {
+  animation: float 6s ease-in-out infinite
+}
+
+.card-design {
+  animation-delay: -3s
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity .7s ease, transform .7s ease
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0)
+}
+
+.project-card,
+.design-item,
+.certificate-card {
+  animation: fadeUp .45s both
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px)
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0)
+  }
+}
+
+@media(prefers-reduced-motion:reduce) {
+
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none
+  }
+}
