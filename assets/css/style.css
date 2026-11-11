@@ -1224,10 +1224,10 @@ body.modal-open {
 }
 
 /* Blinking cursor for the typewriter effect */
-@keyframes blink {
+/*@keyframes blink {
   0%, 100% { opacity: 1; }
   50% { opacity: 0; }
-}
+}*/
 
 #typedRole {
   display: inline-block;
