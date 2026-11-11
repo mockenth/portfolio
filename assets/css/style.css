@@ -229,17 +229,6 @@ body.modal-open {
   font-size: 15px
 }
 
-.typing-line {
-  margin: 25px 0;
-  color: var(--muted);
-  font-size: 12px
-}
-
-.typing-line strong {
-  color: var(--text);
-  margin-left: 7px
-}
-
 .hero-actions {
   display: flex;
   gap: 12px;
