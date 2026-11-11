@@ -13,7 +13,7 @@ window.PORTFOLIO_DATA = {
       title: "Road Damage Detection System",
       category: "ai",
       type: "AI & Machine Learning",
-      subtitle: "Real-time road hazard detection.",
+      subtitle: "Real-time road damage detection.",
       description: "An AI-powered application designed to identify and classify road damages (potholes, cracks) using computer vision.",
       features: [
         "Integrated the YOLO object detection model with a mobile frontend.",
@@ -38,7 +38,7 @@ window.PORTFOLIO_DATA = {
         "Information portal for the Kimud Shoal diving site."
       ],
       tech: ["PHP", "MySQL", "HTML", "CSS", "Javascript"],
-      date: "[YEAR]",
+      date: "2026",
       image: "",
       link: "",
       github: ""
@@ -55,7 +55,7 @@ window.PORTFOLIO_DATA = {
         "User login system for saving favorite recipes."
       ],
       tech: ["PHP", "MySQL", "HTML", "CSS", "Javascript"],
-      date: "[YEAR]",
+      date: "2024",
       image: "/assets/images/project-in-progress/gkr.png",
       link: "https://grandmaskitchen.freedev.app/",
       github: ""
