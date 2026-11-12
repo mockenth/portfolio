@@ -39,7 +39,7 @@ window.PORTFOLIO_DATA = {
       ],
       tech: ["PHP", "MySQL", "HTML", "CSS", "Javascript"],
       date: "2026",
-      image: "",
+      image: "/assets/images/project-in-progress/kimud-soal.jpg",
       link: "",
       github: ""
     },
