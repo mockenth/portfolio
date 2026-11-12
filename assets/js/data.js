@@ -84,7 +84,14 @@ window.PORTFOLIO_DATA = {
       caption: "APPAREL / MERCH",
       description: "Custom shirt layout and design.",
       image: "assets/images/graphic-designs/pe-shirt.png"
-    }
+    },
+    {
+      title: "Custom Shirt Layout",
+      category: "shirt",
+      caption: "APPAREL / MERCH",
+      description: "Custom shirt layout and design.",
+      image: "assets/images/graphic-designs/cnsat.02.png"
+    },
   ],
 
   /* certifications */
