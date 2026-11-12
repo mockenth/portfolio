@@ -162,7 +162,7 @@ window.PORTFOLIO_DATA = {
     {
       date: "2023",
       title: "First Steps into Tech",
-      description: "Developed a strong curiosity for technology, building my first basic HTML/CSS websites and learning the fundamentals of programming logic."
+      description: "Developed a strong curiosity for technology, building my first basic HTML/CSS and Django websites and learning the fundamentals of programming logic."
     }
   ],
 
