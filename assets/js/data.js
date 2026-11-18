@@ -59,7 +59,40 @@ window.PORTFOLIO_DATA = {
       image: "/assets/images/project-in-progress/gkr.png",
       link: "https://grandmaskitchen.freedev.app/",
       github: ""
-    }
+    },
+    {
+      title: "Bluee Book Portal",
+      category: "academic",
+      type: "Web Development",
+      subtitle: "A digital purchasing portal for students.",
+      description: "A digital platform for students to purchase examination booklets. The site features a user-friendly interface for reservng, and purchasing items, along with a secure payment system.",
+      features: [
+        "View detailed information and step-by-step instructions.",
+        "User login system for saving favorite booklets."
+      ],
+      tech: ["PHP", "MongoDB", "HTML", "CSS", "Javascript"],
+      date: "2026",
+      image: "/assets/images/project-in-progress/bluebook-portal.jpg",
+      link: "https://bluebook-dv2u.onrender.com/?fbclid=IwY2xjawVqE3JleHRuA2FlbQIxMABwZG9mBWJyaWQRMWJYMnVqSzZOd2FUdHZ2QmFzcnRjBmFwcF9pZBAyMjIwMzkxNzg4MjAwODkyAAEfwHP5ePn0gTn0UefcRxRf9T0gmMzLF5FDTz5bFFzPV8ytAr_HTsm768eMyoY_aem_JX3jL5MeyDSvZhs7aOG82A",
+      github: ""
+    },
+    {
+      title: "CS Builders",
+      category: "academic",
+      type: "Web Development",
+      subtitle: "A platform for students to build and showcase their projects.",
+      description: "A web development platform where students can collaborate on projects, share their work, and receive feedback from peers and instructors.",
+      features: [
+        "Search and filter projects by category.",
+        "View detailes and visit project pages.",
+      ],
+      tech: ["HTML", "CSS", "Javascript"],
+      date: "November 2024",
+      image: "/assets/images/project-in-progress/cs-builder.jpeg",
+      link: "https://index-rsch.vercel.app/",
+      github: ""
+    },
+
   ],
 
   /* published projects and designs of the owner */
