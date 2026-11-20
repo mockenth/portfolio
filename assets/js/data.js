@@ -40,7 +40,7 @@ window.PORTFOLIO_DATA = {
       tech: ["PHP", "MySQL", "HTML", "CSS", "Javascript"],
       date: "2026",
       image: "/assets/images/project-in-progress/kimud-soal.jpg",
-      link: "",
+      link: "https://tides-yteo.onrender.com/?fbclid=IwY2xjawVsh8NleHRuA2FlbQIxMQBwZG9mA2JyaWQRMUNEaE1aakRockZtUkI2eFpzcnRjBmFwcF9pZAEwAAEfP4zn-WSpuS9Ar450EBQ6qAquDnEBSLdpjoJQMP03QQU_DBTez0sFmyY0iZ8_aem_HsHmpivHu_8H-g8CxUvd8Q",
       github: ""
     },
     {
@@ -64,14 +64,14 @@ window.PORTFOLIO_DATA = {
       title: "Bluee Book Portal",
       category: "academic",
       type: "Web Development",
-      subtitle: "A digital purchasing portal for students.",
-      description: "A digital platform for students to purchase examination booklets. The site features a user-friendly interface for reservng, and purchasing items, along with a secure payment system.",
+      subtitle: "A digital purchasing portal for Students in BiPSU.",
+      description: "A digital platform for students to purchase examination booklets in BiPSU. The site features a user-friendly interface for reserving, and purchasing item, along with a secure payment system.",
       features: [
         "View detailed information and step-by-step instructions.",
         "User login system for saving favorite booklets."
       ],
       tech: ["PHP", "MongoDB", "HTML", "CSS", "Javascript"],
-      date: "2026",
+      date: "November2026",
       image: "/assets/images/project-in-progress/bluebook-portal.jpg",
       link: "https://bluebook-dv2u.onrender.com/?fbclid=IwY2xjawVqE3JleHRuA2FlbQIxMABwZG9mBWJyaWQRMWJYMnVqSzZOd2FUdHZ2QmFzcnRjBmFwcF9pZBAyMjIwMzkxNzg4MjAwODkyAAEfwHP5ePn0gTn0UefcRxRf9T0gmMzLF5FDTz5bFFzPV8ytAr_HTsm768eMyoY_aem_JX3jL5MeyDSvZhs7aOG82A",
       github: ""
